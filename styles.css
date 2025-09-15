@@ -1,14 +1,17 @@
 .container{
     display: flex;
-    background-color: gray;
+    background-color: midnightblue;
     width: 90vw;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 20px auto;
 }
 .card{
-    background-color: blue;
+    background-color: white;
     width:22%;
     height: 300px;
-    margin:10px auto;
+    margin:20px auto;
+}
+body{
+    background-color: black;
 }
