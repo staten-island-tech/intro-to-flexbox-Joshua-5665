@@ -1,3 +1,9 @@
+h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
 .container{
     display: flex;
     background-color: midnightblue;
@@ -11,7 +17,17 @@
     width:22%;
     height: 300px;
     margin:20px auto;
+    align-items: center;
 }
 body{
     background-color: black;
+}
+.card-img{
+    width: 50%;
+    height: 65%;
+    align-items: center;
+     
+}
+h2, h3{
+    text-align: center;
 }
