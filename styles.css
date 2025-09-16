@@ -11,6 +11,7 @@ h1{
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 20px auto;
+    box-shadow: 10px 10px #888888;
 }
 .card{
     background-color: white;
@@ -23,8 +24,9 @@ body{
     background-color: black;
 }
 .card-img{
+    display: flex;
     width: 50%;
-    height: 65%;
+    height: 50%;
     align-items: center;
      
 }
