@@ -11,7 +11,7 @@ p{
 }
 .container{
     display: flex;
-    background-color: midnightblue;
+    background-color: #040137;
     width: 90vw;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -38,6 +38,8 @@ body{
     width: 50%;
     height: 50%;
     align-items: center;
+    margin: 10px auto;
+    border-radius: 20px;
 }
 h2, h3{
     text-align: center;
