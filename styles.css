@@ -2,6 +2,7 @@ h1{
     color: white;
     text-align: center;
     font-size: 50px;
+    border: 5px solid white;
 }
 
 .container{
@@ -14,11 +15,12 @@ h1{
     box-shadow: 10px 10px #888888;
 }
 .card{
-    background-color: white;
+    background-color: beige;
     width:22%;
     height: 300px;
     margin:20px auto;
     align-items: center;
+    box-shadow: 10px 10px 10px black;
 }
 body{
     background-color: black;
@@ -28,7 +30,6 @@ body{
     width: 50%;
     height: 50%;
     align-items: center;
-     
 }
 h2, h3{
     text-align: center;
