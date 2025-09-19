@@ -17,21 +17,8 @@ p{
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 10px auto;
-}
-.card{
-    background-color: rgb(69, 80, 22);
-    width:22%;
-    height: 400px;
-    margin:20px auto;
-    align-items: center;
-    box-shadow: 10px 10px 10px black;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-.card:hover {
-  transform: scale(1.1);
-}
-body{
+    border:rgb(47, 51, 0) solid 30px;
+    border-radius: 10px;
     background-color: rgb(19, 25, 0);
 }
 .card-img{
@@ -44,12 +31,15 @@ body{
 }
 h2{
     text-align: center;
+    font-size: 22px;
     color: darkgoldenrod;
     background-color: rgb(32, 35, 1);
 }
 h3{
     text-align: center;
     color: darkgoldenrod;
+    padding-top: 20px;
+    font-size: 25px;
 }
 @media screen and (max-width: 700px) {
     .container {
