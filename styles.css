@@ -1,15 +1,14 @@
 body{
-    background-color: rgb(42, 43, 0);
+    background-color: rgb(9, 9, 0);
 }
 .container{
     display: flex;
-    background-color: rgb(75, 77, 54);
+    background-color: rgb(50, 52, 32);
     width: 100vw;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 10px auto;
     border-radius: 10px;
-    background-color: rgb(19, 25, 0);
 }
 .card{
     background-color: rgb(32, 35, 1);
@@ -36,8 +35,8 @@ p{
     display: flex;
     width: 70%;
     max-width: 300px;
-    height: 60%;
-    max-height: 300px;
+    height: 58%;
+    max-height: 298px;
     align-items: center;
     margin: 10px auto;
     border-radius: 5px;
