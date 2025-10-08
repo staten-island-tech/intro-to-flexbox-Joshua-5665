@@ -63,8 +63,6 @@ h3{
     cursor: pointer;
 }
 
-
-
 @media (max-width: 450px) {
     .container{
         flex-direction: column;
