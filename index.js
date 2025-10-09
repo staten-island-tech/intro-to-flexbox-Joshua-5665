@@ -56,19 +56,53 @@ const wheels = [
         type: "Extra",
     },
     {
-        name: "Western Style Wagon Wheel",
-        price: 44.99,
+        name: "LEGO Wheels Set",
+        price: 21.99,
         inStock: true,
         brand: "The Wheel Store",
         img: "",
-        type: "Wheel",
+        type: "Rubber",
     },
     {
-        name: "Western Style Wagon Wheel",
-        price: 44.99,
+        name: "Office Chair Rubber Wheels",
+        price: 22.99,
         inStock: true,
         brand: "The Wheel Store",
         img: "",
-        type: "Wheel",
+        type: "Rubber",
     },
-]
+    {
+        name: "Ferris Wheel Model",
+        price: 16.49,
+        inStock: true,
+        brand: "The Wheel Store",
+        img: "",
+        type: "Extra",
+    },
+    {
+        name: "Tesla Model 3 Wheels",
+        price: 209.00,
+        inStock: true,
+        brand: "The Wheel Store",
+        img: "",
+        type: "Vehicles",
+    },
+    {
+        name: "14inch Motocycle Wheel",
+        price: 74.98,
+        inStock: true,
+        brand: "The Wheel Store",
+        img: "",
+        type: "Vehicles",
+    }
+];
+
+function inject(item) {
+
+    const container = document.quesrySelector(".container");
+    container.insertAdjacentHTML("afterbegin", `<h1>${item.name}</h1>`);
+}
+inject(products[0]);
+inject(products[0]);
+inject(products[0]);
+inject(products[0]);

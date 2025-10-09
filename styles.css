@@ -1,7 +1,8 @@
-body{
+body {
     background-color: rgb(18, 18, 0);
 }
-.container{
+
+.container {
     display: flex;
     background-color: rgb(50, 52, 32);
     width: 100vw;
@@ -12,7 +13,8 @@ body{
     padding-bottom: 50px;
     gap: 30px;
 }
-.card{
+
+.card {
     background-color: rgb(32, 35, 1);
     width: 400px;
     height: 500px;
@@ -21,20 +23,22 @@ body{
     box-shadow: 5px 5px 15px black;
 }
 
-h1{
+h1 {
     color: darkgoldenrod;
     text-align: center;
     font-size: 60px;
     padding: 50px;
     line-height: 30px;
 }
-p{
+
+p {
     color: darkgoldenrod;
     text-align: center;
     font-size: 25px;
     padding-bottom: 60px;
 }
-.card-img{
+
+.card-img {
     display: flex;
     width: 70%;
     max-width: 300px;
@@ -44,30 +48,35 @@ p{
     margin: 10px auto;
     border-radius: 5px;
 }
-h2{
+
+h2 {
     text-align: center;
     font-size: 22px;
     color: darkgoldenrod;
     background-color: rgb(14, 15, 0);
 }
-h3{
+
+h3 {
     text-align: center;
     color: darkgoldenrod;
     padding-top: 20px;
     font-size: 25px;
 }
-.card:hover{
-    transform: scale(1.07);
-    transition: all 0.3s ease-in-out;
-    box-shadow: 15px 15px 30px black;
-    cursor: pointer;
+
+.btn {
+    width: 80px;
+    height: 70px;
+    float: right;
 }
 
 @media (max-width: 450px) {
-    .container{
+    .container {
         flex-direction: column;
         align-items: center;
     }
 }
 
-    
+
+.btn {
+    transform: translate(-20%, -60%);
+}
