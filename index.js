@@ -5,7 +5,7 @@ const wheels = [
         inStock: true,
         brand: "The Wheel Store",
         img: "",
-        type: "Vehicles"
+        type: "Vehicles",
     },
     {
         name: "Western Style Wagon Wheel",
@@ -97,6 +97,7 @@ const wheels = [
     }
 ];
 
+<<<<<<< HEAD
 function inject(wheels) {
 
     const container = document.querySelector(".container");
@@ -117,3 +118,18 @@ function getCards() {
     const buttons = querySelectorAll("btn");
 
 }
+=======
+function inject(wheel) {
+
+    const container = document.quesrySelector(".container");
+    container.insertAdjacentHTML("afterbegin", 
+    <div class = "card"></div>
+    <div class = "btn">`${wheels.price}`</div>
+    )
+}
+inject(wheels[0]);
+inject(wheels[0]);
+inject(wheels[0]);
+inject(wheels[0]);
+
+>>>>>>> e648448f6f782e10156430fb9f6bb9f9f21aa38a
