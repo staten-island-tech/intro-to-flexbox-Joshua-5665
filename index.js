@@ -97,12 +97,23 @@ const wheels = [
     }
 ];
 
-function inject(item) {
+function inject(wheels) {
 
-    const container = document.quesrySelector(".container");
-    container.insertAdjacentHTML("afterbegin", `<h1>${item.name}</h1>`);
+    const container = document.querySelector(".container");
+    container.insertAdjacentHTML(
+        "afterbegin",
+        `<div class="display-card">
+      <img class="display-img" src="${wheels.img}"/>
+      <h2 class="display-artist">${wheels.name}</h2>
+      <h3 class="display-album">${wheels.price}</h3>
+      <button class="remove btn">Remove Album</button>
+    </div>`
+    );
 }
-inject(products[0]);
-inject(products[0]);
-inject(products[0]);
-inject(products[0]);
+
+wheels.forEach(item => inject(item));
+
+function getCards() {
+    const buttons = querySelectorAll("btn");
+
+}
