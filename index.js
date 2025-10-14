@@ -4,7 +4,7 @@ const wheels = [
         price: 54.01,
         inStock: true,
         brand: "The Wheel Store",
-        img: "",
+        img: "https://m.media-amazon.com/images/I/61P2PJFQzgL.jpg",
         type: "Vehicles",
     },
     {
@@ -12,15 +12,15 @@ const wheels = [
         price: 44.99,
         inStock: true,
         brand: "The Wheel Store",
-        img: "",
+        img: "https://m.media-amazon.com/images/I/71H5hvYXDlL.jpg",
         type: "Vehicles",
     },
     {
         name: "Toyota Wheel Rims",
-        price: 125,
+        price: 125.00,
         inStock: true,
         brand: "The Wheel Store",
-        img: "",
+        img: "https://m.media-amazon.com/images/I/619QCBgfgSL._AC_UY218_.jpg",
         type: "Vehicles",
     },
     {
@@ -28,7 +28,7 @@ const wheels = [
         price: 68.47,
         inStock: true,
         brand: "The Wheel Store",
-        img: "",
+        img: "https://m.media-amazon.com/images/I/71L4NfY-t6L.__AC_SX300_SY300_QL70_FMwebp_.jpg",
         type: "Vehicles",
     },
     {
@@ -36,7 +36,7 @@ const wheels = [
         price: 24.91,
         inStock: true,
         brand: "The Wheel Store",
-        img: "",
+        img: "https://m.media-amazon.com/images/I/51aJVgHs5BL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
         type: "Vehicles",
     },
     {
@@ -44,7 +44,7 @@ const wheels = [
         price: 49.35,
         inStock: true,
         brand: "The Wheel Store",
-        img: "",
+        img: "https://m.media-amazon.com/images/I/51cVdy92kJL._AC_SX679_.jpg",
         type: "Gears",
     },
     {
@@ -52,7 +52,7 @@ const wheels = [
         price: 0.00,
         inStock: true,
         brand: "The Wheel Store",
-        img: "",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Qk4lFYW5itEArNDKfh0-QAgRPJikCTV3XA&s",
         type: "Extra",
     },
     {
@@ -60,7 +60,7 @@ const wheels = [
         price: 21.99,
         inStock: true,
         brand: "The Wheel Store",
-        img: "",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRclhv3foefkOtIPefXLI4jvqcq67cEiufyIA&s",
         type: "Rubber",
     },
     {
@@ -68,7 +68,7 @@ const wheels = [
         price: 22.99,
         inStock: true,
         brand: "The Wheel Store",
-        img: "",
+        img: "https://m.media-amazon.com/images/I/71yg93g3sZL._SX522_.jpg",
         type: "Rubber",
     },
     {
@@ -76,7 +76,7 @@ const wheels = [
         price: 16.49,
         inStock: true,
         brand: "The Wheel Store",
-        img: "",
+        img: "https://m.media-amazon.com/images/I/61vIEjNP0dL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
         type: "Extra",
     },
     {
@@ -84,7 +84,7 @@ const wheels = [
         price: 209.00,
         inStock: true,
         brand: "The Wheel Store",
-        img: "",
+        img: "https://m.media-amazon.com/images/I/614voQB762L.__AC_SX300_SY300_QL70_FMwebp_.jpg",
         type: "Vehicles",
     },
     {
@@ -92,23 +92,22 @@ const wheels = [
         price: 74.98,
         inStock: true,
         brand: "The Wheel Store",
-        img: "",
+        img: "https://m.media-amazon.com/images/I/71UON4G18aL._AC_SX466_.jpg",
         type: "Vehicles",
     }
 ];
 
-<<<<<<< HEAD
-function inject(wheels) {
 
+function inject(wheels) {
     const container = document.querySelector(".container");
     container.insertAdjacentHTML(
         "afterbegin",
-        `<div class="display-card">
-      <img class="display-img" src="${wheels.img}"/>
-      <h2 class="display-artist">${wheels.name}</h2>
-      <h3 class="display-album">${wheels.price}</h3>
-      <button class="remove btn">Remove Album</button>
-    </div>`
+        `<div class="card">
+            <img class="card-img" src="${wheels.img}"/>
+            <h2 class="Card-Header">${wheels.name}</h2>
+            <h3 class="card-price">${wheels.price}</h3>
+            <button class="remove btn">ADD TO CART</button>
+        </div>`
     );
 }
 
@@ -118,18 +117,9 @@ function getCards() {
     const buttons = querySelectorAll("btn");
 
 }
-=======
-function inject(wheel) {
 
-    const container = document.quesrySelector(".container");
-    container.insertAdjacentHTML("afterbegin", 
-    <div class = "card"></div>
-    <div class = "btn">`${wheels.price}`</div>
-    )
+function removeAlbum(event) {
+  event.target.parentElement.remove();
 }
-inject(wheels[0]);
-inject(wheels[0]);
-inject(wheels[0]);
-inject(wheels[0]);
 
->>>>>>> e648448f6f782e10156430fb9f6bb9f9f21aa38a
+

@@ -64,20 +64,17 @@ h3 {
 }
 
 .btn {
-<<<<<<< HEAD
     transform: translate(-20%, -60%);
     width: 110px;
     height: 50px;
     float: right;
     border-radius: 20px;
-=======
     width: 80px;
     height: 70px;
     float: right
 }
 .btn {
     transform: translate(-20%, -60%);
->>>>>>> e648448f6f782e10156430fb9f6bb9f9f21aa38a
 }
 
 @media (max-width: 450px) {
@@ -87,7 +84,4 @@ h3 {
     }
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> e648448f6f782e10156430fb9f6bb9f9f21aa38a
