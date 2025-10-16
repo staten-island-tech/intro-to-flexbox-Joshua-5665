@@ -49,7 +49,7 @@ const wheels = [
     },
     {
         name: "Wheel of Names",
-        price: 0.00,
+        price: 0,
         inStock: true,
         brand: "The Wheel Store",
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Qk4lFYW5itEArNDKfh0-QAgRPJikCTV3XA&s",
@@ -115,11 +115,12 @@ wheels.forEach(item => inject(item));
 
 function getCards() {
     const buttons = querySelectorAll("btn");
-
 }
 
-function removeAlbum(event) {
+/* function removeAlbum(event) {
   event.target.parentElement.remove();
-}
+} */
+
+
 
 
