@@ -13,11 +13,11 @@ const wheels = [
         inStock: true,
         brand: "The Wheel Store",
         img: "https://m.media-amazon.com/images/I/71H5hvYXDlL.jpg",
-        type: "Vehicles",
+        type: "Wooden",
     },
     {
         name: "Toyota Wheel Rims",
-        price: 125.00,
+        price: 125.01,
         inStock: true,
         brand: "The Wheel Store",
         img: "https://m.media-amazon.com/images/I/619QCBgfgSL._AC_UY218_.jpg",
@@ -49,7 +49,7 @@ const wheels = [
     },
     {
         name: "Wheel of Names",
-        price: 0,
+        price: 0.01,
         inStock: true,
         brand: "The Wheel Store",
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Qk4lFYW5itEArNDKfh0-QAgRPJikCTV3XA&s",
@@ -80,8 +80,16 @@ const wheels = [
         type: "Extra",
     },
     {
+        name: "Tank Wheels",
+        price: 199.99,
+        inStock: true,
+        brand: "The Wheel Store",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPhHWXB-ebRBijo5wIZQhFD2aFp-GZbaBPvQ&s",
+        type: "Vehicles",
+    },
+    {
         name: "Tesla Model 3 Wheels",
-        price: 209.00,
+        price: 209.01,
         inStock: true,
         brand: "The Wheel Store",
         img: "https://m.media-amazon.com/images/I/614voQB762L.__AC_SX300_SY300_QL70_FMwebp_.jpg",
@@ -94,7 +102,32 @@ const wheels = [
         brand: "The Wheel Store",
         img: "https://m.media-amazon.com/images/I/71UON4G18aL._AC_SX466_.jpg",
         type: "Vehicles",
+    },
+    {
+        name: "Train Wheels",
+        price: 709.99,
+        inStock: true,
+        brand: "The Wheel Store",
+        img: "https://mechanical.strasburgrailroad.com/wp-content/uploads/2023/10/SRR-Mech.-Oct.-2023-wheel-image-min-1024x680.jpg",
+        type: "Vehicles",
+    },
+    {
+        name: "Vintage Wooden Garden Wagon Wheel",
+        price: 13.99,
+        inStock: true,
+        brand: "The Wheel Store",
+        img: "https://m.media-amazon.com/images/I/61g+l1PbZQL._AC_UL320_.jpg",
+        type: "Wooden",
+    },
+    {
+        name: "Wooden Anchor Ship Wheel",
+        price: 49.99,
+        inStock: true,
+        brand: "The Wheel Store",
+        img: "https://m.media-amazon.com/images/I/61jiBl8DtRL._AC_UL320_.jpg",
+        type: "Wooden",
     }
+
 ];
 
 
@@ -109,12 +142,6 @@ function inject(wheels) {
             <button class="remove btn">ADD TO CART</button>
         </div>`
     );
-}
-
-wheels.forEach(item => inject(item));
-
-function getCards() {
-    const buttons = querySelectorAll("btn");
 }
 
 /* function removeAlbum(event) {
