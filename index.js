@@ -144,6 +144,7 @@ function inject(wheels) {
     );
 }
 
+wheels.forEach(inject);
 /* function removeAlbum(event) {
   event.target.parentElement.remove();
 } */
