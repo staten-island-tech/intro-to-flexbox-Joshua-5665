@@ -144,9 +144,24 @@ function inject(wheels) {
     );
 }
 
-/* function removeAlbum(event) {
-  event.target.parentElement.remove();
-} */
+wheels.forEach((wheel) => inject(wheel));
+
+/* function filterbyType(type) {
+    let display = document.querySelector("#card-display");
+    display.innerHTML = "",
+    const filteredWheels = wheels.filter((wheel)=> wheel.type === type);
+    filterBooks.forEach((book) =>
+        display.insertAdjacentHTML(
+            "afterbegin",
+        `<div class="card">
+            <img class="card-img" src="${wheels.img}"/>
+            <h2 class="Card-Header">${wheels.name}</h2>
+            <h3 class="card-price">${wheels.price}</h3>
+            <button class="remove btn">ADD TO CART</button>
+        </div>`
+        ))
+}
+filterbyType("Vehicles"); */
 
 
 
