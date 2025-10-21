@@ -144,6 +144,7 @@ function inject(wheels) {
     );
 }
 
+<<<<<<< HEAD
 wheels.forEach((wheel) => inject(wheel));
 
 /* function filterbyType(type) {
@@ -162,6 +163,12 @@ wheels.forEach((wheel) => inject(wheel));
         ))
 }
 filterbyType("Vehicles"); */
+=======
+wheels.forEach(inject);
+/* function removeAlbum(event) {
+  event.target.parentElement.remove();
+} */
+>>>>>>> 53f9c49660239f0e75a7050feb0ce842581fbdce
 
 
 
