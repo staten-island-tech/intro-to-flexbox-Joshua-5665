@@ -49,7 +49,7 @@ const wheels = [
     },
     {
         name: "Wheel of Names",
-        price: 0.01,
+        price: 0,
         inStock: true,
         brand: "The Wheel Store",
         img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0Qk4lFYW5itEArNDKfh0-QAgRPJikCTV3XA&s",
@@ -138,13 +138,46 @@ function inject(wheels) {
         `<div class="card">
             <img class="card-img" src="${wheels.img}"/>
             <h2 class="Card-Header">${wheels.name}</h2>
-            <h3 class="card-price">${wheels.price}</h3>
+            <h3 class="card-price">$${wheels.price}</h3>
             <button class="remove btn">ADD TO CART</button>
         </div>`
     );
 }
-
 wheels.forEach(inject);
+
+/* function filterWheels(type) {
+    filterByType = wheels.filter((wheel) => wheel.type === type);
+    const container = document.querySelector(".container");
+    container.innerHTML = "";
+    filterByType.forEach(inject);
+}
+filterWheels("Vehicles"); */
+
+function filterWheels(type) {
+    let filterByType = [];
+    if (type === "All") {
+        filterByType = wheels;
+    } else {
+        filterByType = wheels.filter((wheel) => wheel.type === type);
+    }
+    const container = document.querySelector(".container");
+    container.innerHTML = "";
+    filterByType.forEach(inject);
+}
+const filterButtons = document.querySelectorAll(".filter-btn");
+filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        const type = button.getAttribute("data-type");
+        filterWheels(type);
+    });
+});
+
+
+
+
+
+
+
 
 
 
