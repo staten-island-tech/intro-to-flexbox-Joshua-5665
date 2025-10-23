@@ -1,18 +1,18 @@
 const wheels = [
     {
-        name: "Electric Wheelchair Wheel",
-        price: 54.01,
-        inStock: true,
-        brand: "The Wheel Store",
-        img: "https://m.media-amazon.com/images/I/61P2PJFQzgL.jpg",
-        type: "Vehicles",
-    },
-    {
         name: "Western Style Wagon Wheel",
         price: 44.99,
         inStock: true,
         brand: "The Wheel Store",
         img: "https://m.media-amazon.com/images/I/71H5hvYXDlL.jpg",
+        type: "Wooden",
+    },
+    {
+        name: "Wooden Anchor Ship Wheel",
+        price: 49.99,
+        inStock: true,
+        brand: "The Wheel Store",
+        img: "https://m.media-amazon.com/images/I/61jiBl8DtRL._AC_UL320_.jpg",
         type: "Wooden",
     },
     {
@@ -48,6 +48,22 @@ const wheels = [
         type: "Gears",
     },
     {
+        name: "Plastic Wheel Cogs",
+        price: 12.99,
+        inStock: true,
+        brand: "The Wheel Store",
+        img: "https://m.media-amazon.com/images/I/419mNX4+yrL._AC_UL320_.jpg",
+        type: "Gears",
+    },
+    {
+        name: "Giant Wooden Wall Clock Wheel",
+        price: 89.99,
+        inStock: true,
+        brand: "The Wheel Store",
+        img: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTTA8P3ven7tPblUsEeqA1x47Ju2ilGJgvFwoxS-DR53-PVUKG1NUwao3xR_2COs5lCFIE4esKjhwBFpn_41YhaskiTm4uCoAPvfDdzmjgWiKeOVzo9Fp1i",
+        type: "Wooden",
+    },
+    {
         name: "Wheel of Names",
         price: 0,
         inStock: true,
@@ -72,11 +88,27 @@ const wheels = [
         type: "Rubber",
     },
     {
+        name: "Arcade Redemption Wheel",
+        price: 256.99,
+        inStock: true,
+        brand: "The Wheel Store",
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKZbWsCd3NHXZhELDT_2MD9NyOC26zQ_4-AA&s",
+        type: "Extra",
+    },
+    {
         name: "Ferris Wheel Model",
         price: 16.49,
         inStock: true,
         brand: "The Wheel Store",
         img: "https://m.media-amazon.com/images/I/61vIEjNP0dL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
+        type: "Extra",
+    },
+     {
+        name: "Spinning Prize Wheel",
+        price: 7.99,
+        inStock: true,
+        brand: "The Wheel Store",
+        img: "https://m.media-amazon.com/images/I/61Ff9A9AQIL._AC_UL320_.jpg",
         type: "Extra",
     },
     {
@@ -120,14 +152,13 @@ const wheels = [
         type: "Wooden",
     },
     {
-        name: "Wooden Anchor Ship Wheel",
-        price: 49.99,
+        name: "Electric Wheelchair Wheel",
+        price: 54.01,
         inStock: true,
         brand: "The Wheel Store",
-        img: "https://m.media-amazon.com/images/I/61jiBl8DtRL._AC_UL320_.jpg",
-        type: "Wooden",
-    }
-
+        img: "https://m.media-amazon.com/images/I/61P2PJFQzgL.jpg",
+        type: "Vehicles",
+    },
 ];
 
 
