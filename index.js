@@ -203,6 +203,11 @@ filterButtons.forEach((button) => {
     });
 });
 
+function ADDTOCART() {
+    const addToCartButtons = document.querySelectorAll(".remove");
+    addToCartButtons.forEach((button) => {})
+}
+
 
 
 

@@ -5,11 +5,10 @@ body {
 .container {
     display: flex;
     background-color: rgb(50, 52, 32);
-    width: 100vw;
+    width: 98vw;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 10px auto;
-    border-radius: 10px;
     padding-bottom: 50px;
     gap: 30px;
 }
@@ -18,9 +17,9 @@ body {
     background-color: rgb(32, 35, 1);
     width: 400px;
     height: 500px;
-    margin: 20px auto;
-    border-radius: 10px;
+    margin: 50px auto;
     box-shadow: 5px 5px 15px black;
+    justify-content: space-between;
 }
 
 h1 {
@@ -85,6 +84,28 @@ h3 {
     cursor: pointer;
     background-color: rgb(126, 124, 21);
     font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.cart {
+    background-color: white;
+    width: 800px;
+    height: 145px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+h4 {
+    font-size: 25px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+h5 {
+    font-size: 18px;
+    padding-left: 5px;
+}
+h6 {
+    font-size: 18px;
+    text-align: right;
+    padding-right: 10px;
+    padding-bottom: 5px;
 }
 
 @media (max-width: 450px) {
