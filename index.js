@@ -103,7 +103,7 @@ const wheels = [
         img: "https://m.media-amazon.com/images/I/61vIEjNP0dL.__AC_SX300_SY300_QL70_FMwebp_.jpg",
         type: "Extra",
     },
-     {
+    {
         name: "Spinning Prize Wheel",
         price: 7.99,
         inStock: true,
@@ -170,7 +170,7 @@ function inject(wheels) {
             <img class="card-img" src="${wheels.img}"/>
             <h2 class="Card-Header">${wheels.name}</h2>
             <h3 class="card-price">$${wheels.price}</h3>
-            <button class="remove btn">ADD TO CART</button>
+            <button class="cart-btn">ADD TO CART</button>
         </div>`
     );
 }
@@ -203,8 +203,16 @@ filterButtons.forEach((button) => {
     });
 });
 
-function ADDTOCART() {
-    
+let cart = [];
+
+
+function addToCart() {
+    const cartButtons = document.querySelectorAll(".cart-btn");
+    cartButtons.forEach((button) => {
+        button.addEventListener("click", function () );
+
+
+    })
 }
 
 
