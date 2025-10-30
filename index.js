@@ -170,7 +170,7 @@ function inject(wheels) {
             <img class="card-img" src="${wheels.img}"/>
             <h2 class="Card-Header">${wheels.name}</h2>
             <h3 class="card-price">$${wheels.price}</h3>
-            <button class="cart-btn">ADD TO CART</button>
+            <button class="filter-btn">ADD TO CART</button>
         </div>`
     );
 }
@@ -207,10 +207,12 @@ let cart = [];
 
 
 function addToCart() {
-    const cartButtons = document.querySelectorAll(".cart-btn");
+    const cartButtons = document.querySelectorAll("filter-btn");
     cartButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-            
+        button.addEventListener("click", function() {
+            const card = document.querySelector("").parentElement
+            const name = document.querySelector("h1").textContent
+            const 
         });
 
 
