@@ -209,7 +209,9 @@ let cart = [];
 function addToCart() {
     const cartButtons = document.querySelectorAll(".cart-btn");
     cartButtons.forEach((button) => {
-        button.addEventListener("click", function () );
+        button.addEventListener("click", () => {
+            
+        });
 
 
     })
