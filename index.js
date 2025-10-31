@@ -206,18 +206,32 @@ filterButtons.forEach((button) => {
 let cart = [];
 
 
+
 function addToCart() {
-    const cartButtons = document.querySelectorAll("filter-btn");
-    cartButtons.forEach((button) => {
-        button.addEventListener("click", function() {
-            const card = document.querySelector("").parentElement
-            const name = document.querySelector("h1").textContent
-            const 
+    const cartButtons = document.querySelectorAll("filter.btn");
+    cartButtons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const card = document.parentElement;
+            const name = document.querySelector(".cart-name").textContent;
+            const price = document.querySelector(".cart-price").textContent;
+        
+            cart.push({name: name, price: price});
         });
-
-
+    })
+function showCart() {
+    const cart = document.getElementById('cart');
+    cart.forEach(element => {
+        temp `
+            <p>${element.name || 'no name' }</p>
+        `
+        cart.innerHTML += temp
+        
     })
 }
+showCart();
+}
+
+addToCart();
 
 
 
