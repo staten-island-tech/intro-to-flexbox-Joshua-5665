@@ -204,33 +204,27 @@ filterButtons.forEach((button) => {
 });
 
 let cart = [];
-
+let total = 0;
 
 
 function addToCart() {
-    const cartButtons = document.querySelectorAll("filter.btn");
+    const cartButtons = document.getElementById('cart-btn')
     cartButtons.forEach((btn) => {
         btn.addEventListener("click", () => {
             const card = document.parentElement;
             const name = document.querySelector(".cart-name").textContent;
             const price = document.querySelector(".cart-price").textContent;
+            
         
-            cart.push({name: name, price: price});
+            wheels.push({name: name, price: price})
         });
     })
 function showCart() {
-    const cart = document.getElementById('cart');
-    cart.forEach(element => {
-        temp `
-            <p>${element.name || 'no name' }</p>
-        `
-        cart.innerHTML += temp
-        
-    })
+    const hi = document.getElementById('cart')
+    
 }
 showCart();
 }
-
 addToCart();
 
 
