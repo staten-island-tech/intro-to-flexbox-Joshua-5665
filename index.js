@@ -1,4 +1,4 @@
-const wheels = [
+let wheels = [
     {
         name: "Western Style Wagon Wheel",
         price: 44.99,
@@ -161,29 +161,18 @@ const wheels = [
     },
 ];
 
-
 function inject(wheels) {
     const container = document.querySelector(".container");
     container.insertAdjacentHTML(
         "afterbegin",
         `<div class="card">
             <img class="card-img" src="${wheels.img}"/>
-            <h2 class="Card-Header">${wheels.name}</h2>
+            <h2 class="card-Header">${wheels.name}</h2>
             <h3 class="card-price">$${wheels.price}</h3>
-            <button class="filter-btn">ADD TO CART</button>
+            <button class="add-to-cart-btn">ADD TO CART</button>
         </div>`
     );
-}
-wheels.forEach(inject);
-
-/* function filterWheels(type) {
-    filterByType = wheels.filter((wheel) => wheel.type === type);
-    const container = document.querySelector(".container");
-    container.innerHTML = "";
-    filterByType.forEach(inject);
-}
-filterWheels("Vehicles"); */
-
+} //displays layout
 function filterWheels(type) {
     let filterByType = [];
     if (type === "All") {
@@ -194,7 +183,11 @@ function filterWheels(type) {
     const container = document.querySelector(".container");
     container.innerHTML = "";
     filterByType.forEach(inject);
-}
+
+    
+} //filters the wheels using buttons
+wheels.forEach(inject);
+
 const filterButtons = document.querySelectorAll(".filter-btn");
 filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -204,33 +197,51 @@ filterButtons.forEach((button) => {
 });
 
 let cart = [];
-let total = 0;
-
-
 function addToCart() {
-    const cartButtons = document.getElementById('cart-btn')
+    
+    const cartButtons = document.querySelectorAll('.add-to-cart-btn');
+    
     cartButtons.forEach((btn) => {
         btn.addEventListener("click", () => {
-            const card = document.parentElement;
-            const name = document.querySelector(".cart-name").textContent;
-            const price = document.querySelector(".cart-price").textContent;
+            const card = btn.parentElement; 
+            const name = card.querySelector(".card-Header").textContent;
+            const price = card.querySelector(".card-price").textContent;
+
+            cart.push({name: name, price: price});
+            showCart();
             
-        
-            wheels.push({name: name, price: price})
         });
-    })
-function showCart() {
-    const hi = document.getElementById('cart')
-    
+    });
 }
-showCart();
+
+function showCart() {
+    const cartDiv = document.getElementById('cart');
+
+    
+    cartDiv.innerHTML = 
+    ` <h4>Your Cart</h4>
+        <h5>Items:</h5>`;
+        
+    if(cart.length ===0) {
+        cartDiv.textContent = "Cart is Empty";
+        return;
+    }
+        
+
+    let total = 0;
+
+    cart.forEach((item, index) => {
+        const p = document.createElement('p');
+        p.textContent = `${item.name} - ${item.price}`;
+        cartDiv.appendChild(p);
+
+        total += parseFloat(item.price.replace('$',''));
+    });
+    const tim = document.createElement("h6");
+    tim.textContent = `Total: $${total.toFixed(2)}`;
+    cartDiv.appendChild(tim);
 }
 addToCart();
-
-
-
-
-
 
 
 
