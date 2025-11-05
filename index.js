@@ -222,17 +222,14 @@ function showCart() {
     ` <h4>Your Cart</h4>
         <h5>Items:</h5>`;
         
-    if(cart.length ===0) {
-        cartDiv.textContent = "Cart is Empty";
-        return;
-    }
+  
         
 
     let total = 0;
 
     cart.forEach((item, index) => {
         const p = document.createElement('p');
-        p.textContent = `${item.name} - ${item.price}`;
+        p.textContent = `${item.name} ------------------------------------------ ${item.price}`;
         cartDiv.appendChild(p);
 
         total += parseFloat(item.price.replace('$',''));
