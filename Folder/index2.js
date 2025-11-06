@@ -19,4 +19,27 @@ const dnsRecords = [
 ];
 
 
-function 
+function findDNS(list) {
+  let low = 0;
+  let high = list.length - 1;
+  while (low <= high) {
+    let mid = Math.floor((low + high) / 2);
+    let midAddress = records[mid].address;
+
+
+    if(midAddress === target) {
+      return records[mid].dns;
+    } else if (midAddress > target) {
+      high = mid - 1;
+    } else {
+      low = mid +1;
+    }
+
+  }
+}
+console.log(findDNS(dnsRecords, "google.com"));
+findDNS();
+
+
+
+
