@@ -1,4 +1,4 @@
-const dnsRecords = [
+/* const dnsRecords = [
   { address: "amazon.com", dns: "205.251.242.103" },
   { address: "apple.com", dns: "17.253.144.10" },
   { address: "bbc.com", dns: "151.101.64.81" },
@@ -38,7 +38,42 @@ function findDNS(list) {
   }
 }
 console.log(findDNS(dnsRecords, "google.com"));
-findDNS();
+findDNS(); */
+
+let x;
+let totalQuarter = 48;
+
+function gamble() {
+  
+  let firstMachine = 3;
+
+  if (x < 35) {
+    (totalQuarter --)
+  }   else if (x = 35) {
+    (totalQuarter += 29)
+  }
+}
+
+  
+  let secondMachine = 10;
+
+  if (x < 100) {
+    (totalQuarter --)
+  } else if (x = 100) (
+    (totalQuarter += 59)
+  )
+ 
+
+
+  let thirdMachine = 4;
+
+  if (x < 10) {
+    (totalQuarter --)
+  } else if (x = 10) (
+    (totalQuarter += 8)
+  )
+ 
+console.log("Martha plays " + thirdMachine + " times before going broke.")
 
 
 
