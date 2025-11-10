@@ -38,42 +38,43 @@ function findDNS(list) {
   }
 }
 console.log(findDNS(dnsRecords, "google.com"));
-findDNS(); */
+findDNS(); */ 
 
 let x;
-let totalQuarter = 48;
-
-function gamble() {
+let totalQuarter = 48; 
+let times = 0
+ function gamble(totalQuarter, firstMachine, secondMachine, thirdMachine) {
   
-  let firstMachine = 3;
-
   if (x < 35) {
     (totalQuarter --)
+    (times++)
   }   else if (x = 35) {
     (totalQuarter += 29)
+    (times++)
   }
 }
 
-  
-  let secondMachine = 10;
-
   if (x < 100) {
     (totalQuarter --)
+    (times++)
   } else if (x = 100) (
     (totalQuarter += 59)
+    (times++)
   )
- 
-
-
-  let thirdMachine = 4;
 
   if (x < 10) {
     (totalQuarter --)
+    (times++)
   } else if (x = 10) (
     (totalQuarter += 8)
+    (times++)
   )
- 
-console.log("Martha plays " + thirdMachine + " times before going broke.")
+  return(times);
+
+gamble(48, 3, 10, 4); 
+
+
+console.log("Martha plays " + times + " times before going broke.")
 
 
 
