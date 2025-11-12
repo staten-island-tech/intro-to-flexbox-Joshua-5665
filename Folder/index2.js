@@ -40,7 +40,12 @@ function findDNS(list) {
 console.log(findDNS(dnsRecords, "google.com"));
 findDNS(); */ 
 
-let x;
+//vite 
+//node js version 20
+//node +vite = outside package
+//asthetic website, use gsap
+
+/* let x;
 let totalQuarter = 48; 
 let times = 0
  function gamble(totalQuarter, firstMachine, secondMachine, thirdMachine) {
@@ -69,13 +74,33 @@ let times = 0
     (totalQuarter += 8)
     (times++)
   )
-  return(times);
 
-gamble(48, 3, 10, 4); 
+gamble(48, 3, 10, 4)
+
 
 
 console.log("Martha plays " + times + " times before going broke.")
+ return(times); */
 
+let quarters = 48;
+let plays = 0;
+let machine1 = 3,
+    machine2 = 10,
+    machine3 = 4;
+function gamble(quarters, machine1, machine2, machine3) {
+  while (plays++) {
+    quarters--, machine1++, machine2++, machine3++
+  };
+  while (machine1 = 35) {
+   quarters + 30
+  }
+  while (machine2 = 100) {
+    quarters + 60
+  }
+  while (machine3 = 10) {
+    quarters +9
+  }
+}
+gamble(48, 3, 10, 4);
 
-
-
+return("Martha plays " + plays + " before going broke.")
